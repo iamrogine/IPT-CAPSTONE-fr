@@ -1,0 +1,51 @@
+import java.util.Scanner;
+		//FIRST COMMIT BY ROGINE
+	class Calculator{
+		Double a,b;
+			Calculator(Double a, Double b){
+			this.a=a;
+			this.b=b;
+	}
+		Double add() {	return a+b; }
+		Double sub() {	return a-b; }
+		Double mul() {	return a*b; }
+		Double div() {	return a/b; }
+	}
+
+	 class calc {
+		
+		public static void main (String [] args) {
+			
+
+				for (int i = 0; i < 100000; i = i + 1) {
+
+			Scanner sr=new Scanner(System.in);
+			System.out.println("Kindly Enter Your First Number :");
+			Double a=sr.nextDouble();
+			System.out.println("Now Please Enter Your Second Number :");
+			Double b=sr.nextDouble();
+			System.out.println("And Lastly, Please Enter The Operation You want");
+			System.out.println("A for Addition");
+			System.out.println("S for Subtraction");
+			System.out.println("M for Multiplication");
+			System.out.println("D for Division");
+			String op=sr.next();
+			Double c=0.0;
+			Calculator obj=new Calculator (a,b);
+				switch (op) {
+					case "A": c=obj.add() ; break;
+					case "S": c=obj.sub() ; break;
+					case "M": c=obj.mul() ; break;
+					case "D": c=obj.div() ; break;
+					case "a": c=obj.add() ; break;
+					case "s": c=obj.sub() ; break;
+					case "m": c=obj.mul() ; break;
+					case "d": c=obj.div() ; break;
+				default: System.out.println("Please Enter The Letters That You Are Instructed With!");
+				continue;
+		}
+						
+						System.out.println("Answer : " + c);
+		}
+	}
+}   
