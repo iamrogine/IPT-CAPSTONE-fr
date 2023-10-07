@@ -6,10 +6,10 @@ import java.util.Scanner;
 			this.a=a;
 			this.b=b;
 	}
-		Double add() {	return a+b; }
-		Double sub() {	return a-b; }
-		Double mul() {	return a*b; }
-		Double div() {	return a/b; }
+		Double add() {	return a+b; } // Addition
+		Double sub() {	return a-b; } // Subtraction
+		Double mul() {	return a*b; } // Multiplication
+		Double div() {	return a/b; } // Division
 	}
 
 	 class calc {
